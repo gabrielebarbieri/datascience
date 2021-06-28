@@ -21,7 +21,7 @@ X = (df.index -  df.index[0]).days.values.reshape(-1, 1)
 y = df['weight'].values
 reg = LinearRegression().fit(X, y)
 
-df['weight_pred'] = reg.predict(X)  # make predictions
+df['weight_pred'] = reg.predict(X)
 df.plot()
 plt.show()
 
